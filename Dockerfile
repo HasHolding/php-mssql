@@ -1,6 +1,6 @@
 FROM centos:7
 ENV container docker
-MAINTAINER "Levent SAGIROPGLU" <lsagiroglu@gmail.com>
+MAINTAINER "Levent SAGIROPGLU" <LSagiroglu@gmail.com>
 
 RUN yum -y update
 RUN yum -y install epel-release \
