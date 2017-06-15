@@ -46,3 +46,4 @@ RUN sed -i '/^listen/c listen = 9000' /etc/php-fpm.d/www.conf
 RUN ln -sf /dev/stderr /var/log/php-fpm/error.log
 
 CMD ["php-fpm", "--allow-to-run-as-root", "--nodaemonize"]
+
