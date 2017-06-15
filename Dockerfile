@@ -1,6 +1,6 @@
 FROM centos:7
 ENV container docker
-MAINTAINER "Levent SAGIROPGLU" <LSagiroglu@gmail.com>
+MAINTAINER "Levent SAGIROGLU" <LSagiroglu@gmail.com>
 
 RUN yum -y update
 RUN yum -y install epel-release \
@@ -40,10 +40,10 @@ RUN yum install -y gettext \
                php-pear \
                php-soap
 RUN yum clean all 
+
  
 RUN sed -i '/^listen/c listen = 9000' /etc/php-fpm.d/www.conf 
  
 RUN ln -sf /dev/stderr /var/log/php-fpm/error.log
 
 CMD ["php-fpm", "--allow-to-run-as-root", "--nodaemonize"]
-
