@@ -14,3 +14,7 @@ The following components are included:
 - Installed PHP modules (php-fpm, php-cli, php-gd, php-intl, php-json, php-ldap, php-mbstring, php-mcrypt, php-opcache, php-pdo, php-pecl-zip, php-soap, php-sqlsrv, php-xml, php-mysqlnd, php-pecl-uuid, php-bcmath, mediainfo, openldap-clients, php-mhash, php-xsl, php-pear, php-soap)
 - [Microsoft ODBC Driver 13 for Linux] (https://blogs.msdn.microsoft.com/sqlnativeclient/2016/10/20/odbc-driver-13-0-for-linux-released/)
 - [Microsoft Drivers for PHP for SQL Server] (https://github.com/Microsoft/msphpsql/tree/Linux-GA-4.0.8)
+## Settings
+Loaded Configuration File : /etc/php.ini  
+Scan this dir for additional .ini files : /etc/php.d  
+error_log : /var/log/php-fpm/www-error.log 
