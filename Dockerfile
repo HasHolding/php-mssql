@@ -41,6 +41,7 @@ RUN yum install -y gettext \
                php-soap
 RUN yum clean all 
 
+RUN echo 'error_log = /var/log/php-fpm/php-error.log' >> /etc/php.d/50-errlog.ini
  
 RUN sed -i '/^listen/c listen = 9000' /etc/php-fpm.d/www.conf 
  
