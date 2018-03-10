@@ -34,9 +34,9 @@ RUN yum -y install gettext \
                    php-xsl \
                    php-pear \
                    php-soap
-    
+                   
+# for last version info : https://packages.microsoft.com/rhel/7/prod/                                                          
 RUN ACCEPT_EULA=Y yum install -y msodbcsql-13.1.9.2-1 mssql-tools-14.0.6.0-1 unixODBC-devel
-# for last version info : https://packages.microsoft.com/rhel/7/prod/                                                      
 RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile && \  
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc  && \  
     source ~/.bashrc
