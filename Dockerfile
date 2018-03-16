@@ -47,9 +47,9 @@ RUN yum -y install php-pdo \
 RUN yum reinstall -y ca-certificates
 RUN yum clean all 
 
-VOLUME /srv/log/php-fpm
-RUN echo 'error_log = /srv/log/php-fpm/php-error.log' >> /etc/php.d/50-errlog.ini  && \  
+VOLUME /shared/log/php-fpm
+RUN echo 'error_log = /shared/log/php-fpm/php-error.log' >> /etc/php.d/50-errlog.ini  && \  
     sed -i '/^listen/c listen = 9000' /etc/php-fpm.d/www.conf   && \  
-    ln -sf /dev/stderr /srv/log/php-fpm/error.log
+    ln -sf /dev/stderr /shared/log/php-fpm/error.log
 
 CMD ["php-fpm", "--allow-to-run-as-root", "--nodaemonize"]
