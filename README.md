@@ -17,5 +17,5 @@ The following components are included:
 ## Settings
 Loaded Configuration File : /etc/php.ini  
 Scan this dir for additional .ini files : /etc/php.d  
-php_error_log : /var/log/php-fpm/php-error.log 
+php_error_log : /var/log/php-fpm/php-error.log  
 www_error_log : /var/log/php-fpm/www-error.log
