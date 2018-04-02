@@ -36,13 +36,13 @@ RUN yum -y install gettext \
                    php-soap
                    
 # for last version info : https://packages.microsoft.com/rhel/7/prod/                                                          
-RUN ACCEPT_EULA=Y yum install -y msodbcsql-13.1.9.2-1 mssql-tools-14.0.6.0-1 unixODBC-devel
+RUN ACCEPT_EULA=Y yum install -y msodbcsql17-17.0.1.1-1 mssql-tools-17.0.1.1-1 unixODBC-devel
 RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile && \  
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc  && \  
     source ~/.bashrc
 
 RUN yum -y install php-pdo \
-                   php-sqlsrv \
+                   php-sqlsrv
 
 RUN yum reinstall -y ca-certificates
 RUN yum clean all 
