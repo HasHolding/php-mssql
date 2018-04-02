@@ -7,11 +7,6 @@ RUN yum -y install epel-release  \
                    wget  \  
                    yum-utils 
 
-RUN wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm && \  
-    rpm -Uvh remi-release-7*.rpm && \  
-    yum-config-manager --enable remi-php71 && \  
-    curl https://packages.microsoft.com/config/rhel/7/prod.repo > /etc/yum.repos.d/mssql-release.repo 
-
 RUN wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \  
     rpm -Uvh remi-release-7.rpm  && \  
     yum-config-manager --enable remi-php71 && \  
