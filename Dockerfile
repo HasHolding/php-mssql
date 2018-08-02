@@ -34,7 +34,7 @@ RUN yum-config-manager --enable extras && \
 
 # for last version info : https://packages.microsoft.com/rhel/7/prod/
 
-RUN ACCEPT_EULA=Y yum install -y msodbcsql17-17.1.0.1-1 mssql-tools-17.1.0.1-1 unixODBC-devel
+RUN ACCEPT_EULA=Y yum install -y msodbcsql17-17.2.0.1-1 mssql-tools-17.2.0.1-1 unixODBC-devel
 RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile && \
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc  && \
     source ~/.bashrc
