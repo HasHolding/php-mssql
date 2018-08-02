@@ -12,8 +12,8 @@ The following components are included:
 - SQL Server command-line utilities (sqlcmd and bcp).
 - Command-line text editor tools (nano and vim).
 - Installed PHP modules (php-fpm, php-cli, php-gd, php-intl, php-json, php-ldap, php-mbstring, php-mcrypt, php-opcache, php-pdo, php-pecl-zip, php-soap, php-sqlsrv, php-xml, php-mysqlnd, php-pecl-uuid, php-bcmath, mediainfo, openldap-clients, php-mhash, php-xsl, php-pear, php-soap)
-- [Microsoft ODBC Driver 13 for Linux] (https://blogs.msdn.microsoft.com/sqlnativeclient/2016/10/20/odbc-driver-13-0-for-linux-released/)
-- [Microsoft Drivers for PHP for SQL Server] (https://github.com/Microsoft/msphpsql/tree/Linux-GA-4.0.8)
+- [Microsoft ODBC Driver 17.2 for Linux] (https://blogs.msdn.microsoft.com/sqlnativeclient/2018/07/11/odbc-driver-17-2-for-sql-server-released/)
+- [Microsoft Drivers for PHP for SQL Server 5.3] (https://docs.microsoft.com/en-us/sql/connect/php/release-notes-for-the-php-sql-driver?view=sql-server-2017#whats-new-in-version-53)
 ## Settings
 Loaded Configuration File : /etc/php.ini  
 Scan this dir for additional .ini files : /etc/php.d  
