@@ -1,4 +1,4 @@
-# PHP 7.1 & pdo_sqlsrv
+# PHP 7.2 & pdo_sqlsrv
 
 This image provides an integrated development environment for PHP with connectivity to a remote SQL Server database.
 
@@ -7,7 +7,7 @@ This image provides an integrated development environment for PHP with connectiv
 The following components are included:
 - Centos 7 OS layer.
 - PHP-FPM latest
-- Pre-configured PHP 7.1 runtime environment.
+- Pre-configured PHP 7.2 runtime environment.
 - [sqlsrv](http://php.net/manual/en/book.sqlsrv.php) and [pdo_sqlsrv](http://php.net/manual/en/ref.pdo-sqlsrv.php) for SQL Server.
 - SQL Server command-line utilities (sqlcmd and bcp).
 - Command-line text editor tools (nano and vim).
