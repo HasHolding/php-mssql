@@ -2,7 +2,7 @@
 
 This image provides an integrated development environment for PHP with connectivity to a remote SQL Server database.
 
-### [Dockerfile](https://github.com/HasOtomotiv/php-mssql/blob/master/Dockerfile)
+### [Dockerfile](https://github.com/HasHolding/php-mssql/blob/master/Dockerfile)
 
 The following components are included:
 - Centos 7 OS layer.
